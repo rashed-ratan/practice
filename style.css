@@ -1,0 +1,23 @@
+.box{
+    width: 100px;
+    height: 100px;
+    border:1px solid orchid;
+}
+
+#box-1{
+    background-color: aqua;
+}
+#box-2{
+    background-color: sienna;
+    /* display: none; */
+    display: block;
+}
+#box-3{
+    background-color: blue;
+    /* visibility: hidden; */
+    visibility: visible;
+}
+
+#box-4{
+    background-color: olive;
+}

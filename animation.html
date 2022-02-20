@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Practice</title>
+    <style>
+
+        @keyframes pingpong {
+
+            0%{
+                background-color: yellow;
+                left: 0;
+                top: 0;
+                transform: scale(0.5);
+            }
+            30%{
+                background-color: red;
+                top: 322px;
+            }
+            45%{
+                background-color: yellow;
+                top: 0;
+            }
+            60%{
+                background-color: red;
+                top: 300px;
+            }
+            100%{
+                background-color: yellow;
+                left: 700px;
+                top: 0;
+            }
+            
+        }
+        .stage{
+            width: 800px;
+            height: 400px;
+            background-color: rgb(29, 233, 233);
+
+        }
+        .ball{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(235, 17, 169);
+            border-radius: 50%;
+            animation: pingpong 3s ease-in-out 0.5s 5 alternate;
+            animation-play-state:running;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <h1>Animation Practice</h1>
+
+    <div class="stage">
+        <div class="ball">
+
+        </div>
+    </div>
+
+</body>
+</html>
