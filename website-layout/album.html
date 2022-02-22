@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Album</title>
+    <style>
+        .heading{
+            background-color: aquamarine;
+        }
+        .heading h1{
+            text-align: center;
+            padding: 5px 0px 5px 0px;
+        }
+        .photo-album{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .photo-frame{
+            width: 300px;
+            height: 225px;
+            border: 2px solid goldenrod;
+            border-radius: 10px;
+            position: relative;
+            margin: 0px 10px 10px 0px;
+            overflow: hidden;
+        }
+        .photo-frame img{
+            width: 100%;
+            border-radius: 10px;
+        }
+        .photo-details{
+            /* position-absolate korle er jaiga ta udhaw hoye jabe r relative korle tar jaiga ta thakbe */
+            position: absolute; 
+            width: 300px;
+            top: 0;
+            display: none;
+        }
+        .photo-details h3{
+            background-color: rgba(0, 0, 0, 0.472);
+            color: white;
+            text-align: center;
+        }
+        .photo-details p{
+            background-color: rgba(0, 0, 0, 0.472);
+            color: white;
+            text-align: justify;
+            padding:10px 5px;
+        }
+        .photo-frame:hover .photo-details{
+            display: block;
+        }
+        .photo-frame:hover .photo{
+            transform: scale(2) skew(-10deg);
+            transition: 2s ease-in;
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <h1>My Photo Album</h1>
+    </div>
+    <div class="photo-album">
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="images/tiger.jpg" alt="">
+            </div>
+            <div class="photo-details">
+                <h3>Tiger Running</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, minus ab. Non beatae adipisci obcaecati aspernatur repellendus. Cum dignissimos porro labore temporibus. Veritatis accusamus eveniet qui, commodi obcaecati esse veniam.</p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="images/tiger.jpg" alt="">
+            </div>
+            <div class="photo-details">
+                <h3>Tiger Running</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, minus ab. Non beatae adipisci obcaecati aspernatur repellendus. Cum dignissimos porro labore temporibus. Veritatis accusamus eveniet qui, commodi obcaecati esse veniam.</p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="images/tiger.jpg" alt="">
+            </div>
+            <div class="photo-details">
+                <h3>Tiger Running</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, minus ab. Non beatae adipisci obcaecati aspernatur repellendus. Cum dignissimos porro labore temporibus. Veritatis accusamus eveniet qui, commodi obcaecati esse veniam.</p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="images/tiger.jpg" alt="">
+            </div>
+            <div class="photo-details">
+                <h3>Tiger Running</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, minus ab. Non beatae adipisci obcaecati aspernatur repellendus. Cum dignissimos porro labore temporibus. Veritatis accusamus eveniet qui, commodi obcaecati esse veniam.</p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="images/tiger.jpg" alt="">
+            </div>
+            <div class="photo-details">
+                <h3>Tiger Running</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, minus ab. Non beatae adipisci obcaecati aspernatur repellendus. Cum dignissimos porro labore temporibus. Veritatis accusamus eveniet qui, commodi obcaecati esse veniam.</p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="images/tiger.jpg" alt="">
+            </div>
+            <div class="photo-details">
+                <h3>Tiger Running</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, minus ab. Non beatae adipisci obcaecati aspernatur repellendus. Cum dignissimos porro labore temporibus. Veritatis accusamus eveniet qui, commodi obcaecati esse veniam.</p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="images/tiger.jpg" alt="">
+            </div>
+            <div class="photo-details">
+                <h3>Tiger Running</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, minus ab. Non beatae adipisci obcaecati aspernatur repellendus. Cum dignissimos porro labore temporibus. Veritatis accusamus eveniet qui, commodi obcaecati esse veniam.</p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="images/tiger.jpg" alt="">
+            </div>
+            <div class="photo-details">
+                <h3>Tiger Running</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, minus ab. Non beatae adipisci obcaecati aspernatur repellendus. Cum dignissimos porro labore temporibus. Veritatis accusamus eveniet qui, commodi obcaecati esse veniam.</p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="images/tiger.jpg" alt="">
+            </div>
+            <div class="photo-details">
+                <h3>Tiger Running</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, minus ab. Non beatae adipisci obcaecati aspernatur repellendus. Cum dignissimos porro labore temporibus. Veritatis accusamus eveniet qui, commodi obcaecati esse veniam.</p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="images/tiger.jpg" alt="">
+            </div>
+            <div class="photo-details">
+                <h3>Tiger Running</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, minus ab. Non beatae adipisci obcaecati aspernatur repellendus. Cum dignissimos porro labore temporibus. Veritatis accusamus eveniet qui, commodi obcaecati esse veniam.</p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="images/tiger.jpg" alt="">
+            </div>
+            <div class="photo-details">
+                <h3>Tiger Running</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, minus ab. Non beatae adipisci obcaecati aspernatur repellendus. Cum dignissimos porro labore temporibus. Veritatis accusamus eveniet qui, commodi obcaecati esse veniam.</p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="images/tiger.jpg" alt="">
+            </div>
+            <div class="photo-details">
+                <h3>Tiger Running</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, minus ab. Non beatae adipisci obcaecati aspernatur repellendus. Cum dignissimos porro labore temporibus. Veritatis accusamus eveniet qui, commodi obcaecati esse veniam.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

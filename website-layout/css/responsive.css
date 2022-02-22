@@ -1,0 +1,118 @@
+.food-container{
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+.food-item{
+    width: 300px;
+    border: 2px solid goldenrod;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.food-item img{
+    width: 100%;
+}
+.food-item p{
+    font-size: 1rem;
+    padding: 10px 10px;
+    text-align: justify;
+}
+@media (width:1440px) {
+    .food-container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .food-item{
+        margin-bottom: 20px;
+        width: 340px;
+    }
+    .food-item p{
+        font-size: 1rem;
+        padding: 10px 10px;
+        text-align: justify;
+    }
+    .food-item img{
+        width: 100%;
+    }
+
+}
+@media (width:1024px) {
+    .food-container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .food-item{
+        margin-bottom: 20px;
+        width: 245px;
+    }
+    .food-item p{
+        font-size: 1rem;
+        padding: 10px 10px;
+        text-align: justify;
+    }
+    .food-item img{
+        width: 100%;
+    }
+
+}
+@media (width:768px) {
+    .food-container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .food-item{
+        margin-bottom: 20px;
+        width: 175px;
+    }
+    .food-item p{
+        font-size: 1rem;
+        padding: 10px 10px;
+        text-align: justify;
+    }
+    .food-item img{
+        width: 100%;
+    }
+
+}
+@media (width:425px) {
+    .food-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .food-item{
+        margin-bottom: 20px;
+    }
+    .food-item p{
+        font-size: 1.3rem;
+        padding: 10px 10px;
+        text-align: justify;
+    }
+}
+@media (width:375px) {
+    .food-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .food-item{
+        margin-bottom: 20px;
+    }
+    .food-item p{
+        font-size: 1.5rem;
+        padding: 10px 10px;
+        text-align: justify;
+    }
+}
+@media (width:320px) {
+    .food-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .food-item{
+        margin-bottom: 20px;
+    }
+    .food-item p{
+        font-size: 1.3rem;
+        padding: 10px 10px;
+        text-align: justify;
+    }
+}
